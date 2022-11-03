@@ -1,27 +1,24 @@
-#include "main.h"
-
-/**
- * is_prime_number - returns 1 if the input integer is a prime number
- * @num: number
- * Return: return 1 prime - return 0 otherwise
+/*
+ * File: 6-is_prime_number.c
+ * Auth: sam tech
  */
 
-int is_prime_number(int num)
+#include "main.h"
+
+int is_divisible(int num, int div);
+int is_prime_number(int num);
+
+/**
+ * is_divisible - check if a number is divisible
+ * @num: the number to be checked
+ * @div: divisor
+ *
+ * Return: if the number is divisible - 0
+ * if the number is not divisible - 1
+ */
+
+int is_divisible(int num, int div)
 {
-	int iterator;
-
-	iterator = 2;
-
-	/*Only greater than 2*/
-	if (num < 2)
-	{
+	if (num % div == 0)
 		return (0);
-	}
-
-	if (num == 2)
-	{
-		return (1);
-	}
-
-	return (num, iterator);
 }
